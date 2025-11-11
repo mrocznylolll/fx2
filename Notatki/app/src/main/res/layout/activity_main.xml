@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tytuł notatki"
+            android:paddingTop="50dp"/>
+
+        <EditText
+            android:id="@+id/noteInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Treść notatki" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zapisz notatkę" />
+
+        <EditText
+            android:id="@+id/deleteIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID do usunięcia" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuń notatkę" />
+
+        <EditText
+            android:id="@+id/updateIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID do aktualizacji" />
+
+        <EditText
+            android:id="@+id/updateNoteInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nowa treść notatki" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktualizuj notatkę" />
+
+        <TextView
+            android:id="@+id/notesDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
